@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="nl-BE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DSMT · Yoli</title>
+<meta name="description" content="DSMT ontwikkelt Yoli, een iPad-app voor plaatsbeschrijvingen bij intrede en uittrede van huurwoningen in België.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f4efe6;--surface:#fffdf9;--line:#d9d0bf;--ink:#1b2440;--muted:#66705f;--accent:#1f49b5;--accent-ink:#fff;--copper:#b4632a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Figtree,system-ui,sans-serif;font-size:17px;line-height:1.55}
+h1,h2{font-family:"Bricolage Grotesque",Figtree,sans-serif;letter-spacing:-.01em;margin:0}
+.wrap{max-width:980px;margin:0 auto;padding-inline:max(20px,env(safe-area-inset-left,0px)) max(20px,env(safe-area-inset-right,0px))}
+header{display:flex;align-items:center;justify-content:space-between;padding-block:22px}
+.brand{display:flex;align-items:center;gap:10px;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:22px}
+.brand span{width:34px;height:34px;border-radius:9px;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-size:20px}
+nav a{color:var(--muted);text-decoration:none;margin-left:22px;font-weight:500}
+.hero{padding-block:48px 40px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(34px,5vw,54px);font-weight:800;line-height:1.05;text-wrap:balance}
+.hero p{font-size:19px;color:var(--muted);max-width:52ch}
+.pill{display:inline-block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--copper);margin-bottom:14px}
+.mock{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 10px 30px rgba(27,36,64,.08)}
+.mock .row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
+.mock .row:last-child{border:0}
+.tag{font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px;background:#e2e8f8;color:var(--accent)}
+.tag.c{background:#f6e3d3;color:var(--copper)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;padding-block:20px 48px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h2{font-size:19px;margin-bottom:8px}
+.card p{margin:0;color:var(--muted);font-size:16px}
+footer{border-top:1px solid var(--line);padding-block:32px 48px;color:var(--muted);font-size:15px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+footer b{color:var(--ink);display:block;margin-bottom:6px}
+footer a{color:var(--accent);text-decoration:none}
+@media(max-width:760px){.hero{grid-template-columns:1fr}nav{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand"><span>y</span>Yoli</div>
+    <nav><a href="#product">Product</a><a href="#bedrijf">Bedrijf</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <section class="hero" id="product">
+    <div>
+      <div class="pill">In ontwikkeling · iPad-app</div>
+      <h1>Plaatsbeschrijvingen die sneller gaan en sterker staan.</h1>
+      <p>Yoli is een app voor experts en vastgoedkantoren om plaatsbeschrijvingen bij intrede en uittrede op te maken: tikken in plaats van typen, foto's aan de lopende band, en een rapport dat juridisch klopt.</p>
+    </div>
+    <div class="mock" aria-hidden="true">
+      <div class="row"><b>Inkomhal · Muur 1</b><span class="tag">Goed</span></div>
+      <div class="row"><b>Inkomhal · Deur</b><span class="tag">Zeer goed</span></div>
+      <div class="row"><b>Keuken · Dampkap</b><span class="tag c">Matig · 1 schade</span></div>
+      <div class="row"><b>Badkamer · Kraan douche</b><span class="tag">Goed</span></div>
+      <div class="row"><b>Meterstanden</b><span class="tag">3 foto's</span></div>
+    </div>
+  </section>
+
+  <section class="grid">
+    <div class="card"><h2>Niets vergeten</h2><p>Per woningtype staan alle ruimtes en elementen klaar. De expert vinkt af wat er niet is en beoordeelt de rest met één tik.</p></div>
+    <div class="card"><h2>Foto's met bewijswaarde</h2><p>Elke foto krijgt een unieke code en wordt onbewerkt bewaard. Het rapport toont wat is vastgesteld, zonder lege vakken.</p></div>
+    <div class="card"><h2>Van intrede tot afrekening</h2><p>Een uittrede start vanuit de intrede. Schades, tarieven en overnamedocumenten voor water en energie volgen uit dezelfde opname.</p></div>
+  </section>
+
+  <footer id="bedrijf">
+    <div><b>DSMT [BV]</b>[Straat en nummer]<br>[Postcode gemeente], België<br>Ondernemingsnummer BE [0xxx.xxx.xxx]</div>
+    <div id="contact"><b>Contact</b><a href="mailto:info@desmetbv.be">info@desmetbv.be</a><br>www.desmetbv.be</div>
+    <div><b>Yoli</b>Een product van DSMT, ontwikkeld in samenwerking met Guns Experts.<br>© 2026 DSMT</div>
+  </footer>
+</div>
+</body>
+</html>
